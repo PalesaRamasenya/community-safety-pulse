@@ -1,0 +1,122 @@
+.report-page-wrapper {
+  min-height: calc(100vh - 64px);
+  background: var(--bg-light);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.report-page {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--card-padding);
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  align-self: flex-start;
+}
+
+.report-page h2 {
+  margin: 0 0 6px 0;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.report-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.report-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.report-section-heading {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.report-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.report-form select,
+.report-form textarea,
+.report-form input[type='file'] {
+  font-weight: 400;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--card-bg);
+  transition: border-color 0.15s ease;
+}
+
+.report-form select:focus,
+.report-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.report-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.map-picker-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.map-picker-container {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.report-map {
+  height: 100%;
+  width: 100%;
+}
+
+.report-form .submit-button {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .report-page-wrapper {
+    padding: 0;
+  }
+
+  .report-page {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
